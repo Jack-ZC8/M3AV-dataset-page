@@ -1,0 +1,408 @@
+<style>
+  .center50 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* or any desired width */
+  }
+  .center60 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; /* or any desired width */
+  }
+  .center70 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; /* or any desired width */
+  }
+  .center80 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* or any desired width */
+  }
+  .center90 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; /* or any desired width */
+  }
+  .center100 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* or any desired width */
+  }
+</style>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A Multimodal, Multigenre, and Multipurpose Audio-Visual Academic Lecture Dataset">
+  <meta name="keywords" content="Audio-Visual Academic Lecture Dataset">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> M3AV: A Multimodal, Multigenre, and Multipurpose Audio-Visual Academic Lecture Dataset</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.2/css/all.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+            <span style="vertical-align: middle">🎓M<sup>3</sup>AV</span>
+            </h1>
+          <h2 class="subtitle is-3 publication-subtitle">
+            A <b>M</b>ultimodal, <b>M</b>ultigenre, and <b>M</b>ultipurpose <b>A</b>udio-<b>V</b>isual Academic Lecture Dataset
+            <!-- <br> -->
+            <!-- with GPT-4V, Bard, and Other Large Multimodal Models -->
+          </h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=ck8EnE8AAAAJ">Zhe Chen</a><sup style="color:#2878B5;">1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=JTRLMTcAAAAJ">Heyang Liu</a><sup style="color:#2878B5;">1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/Yu-Doit">Wenyi Yu</a><sup style="color:#92DA92;">2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=PzPAzf8AAAAJ">Guangzhi Sun</a><sup style="color:#F8AC8C">3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/LiuHC0428">Hongcheng Liu</a><sup style="color:#2878B5;">1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://web.ee.tsinghua.edu.cn/wuji/zh_CN/index.htm">Ji Wu</a><sup style="color:#92DA92;">2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://mi.eng.cam.ac.uk/~cz277">Chao Zhang</a><sup style="color:#92DA92;">2✉️</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://yuwangsjtu.github.io/">Yu Wang</a><sup style="color:#2878B5;">1,</sup><sup style="color:#C82423">4✉️</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang</a><sup style="color:#2878B5;">1,</sup><sup style="color:#C82423">4</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup style="color:#2878B5;">1</sup>Department of Electronic Engineering, Shanghai JiaoTong University</span><br>
+            <span class="author-block"><sup style="color:#92DA92;">2</sup>Department of Electronic Engineering, Tsinghua University</span>
+            <span class="author-block"><sup style="color:#F8AC8C">3</sup>University of Cambridge Department of Engineering</span><br>
+            <span class="author-block"><sup style="color:#C82423">4</sup>Shanghai AI Laboratory</span><br>
+            <span class="author-block"><b style="color:#f41c1c;">ACL 2024 main conference</b></span>
+          </div>
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2403.14168.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2403.14168"
+                   class="external-link button is-normal is-rounded is-dark">
+                <!-- <a href="https://lupantech.github.io/papers/arxiv23_mathvista.pdf"
+                   class="external-link button is-normal is-rounded is-dark"> -->
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Jack-ZC8/M3AV-dataset"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Download Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Jack-ZC8/M3AV-dataset/download"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">📥</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Download</span>
+                </a>
+              </span>
+              <!-- Demo Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Jack-ZC8/M3AV-dataset/demo"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <p style="font-size:18px">💎</p>
+                  </span>
+                  <span>Demo</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-half">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Publishing open-source academic video recordings is an emergent and prevalent approach to sharing knowledge online. Such videos carry <b>rich multimodal information</b> including speech, the facial and body movements of the speakers, as well as the texts and pictures in the slides and possibly even the papers. Although multiple academic video datasets have been constructed and released, <b>few of them support both multimodal content recognition and understanding tasks</b>, which is partially due to the lack of high-quality human annotations. 
+          </p>
+          <p>
+            In this paper, we propose a novel multimodal, multigenre, and multipurpose audio-visual academic lecture dataset (🎓M<sup>3</sup>AV), which has almost 367 hours of videos from five sources covering computer science, mathematics, and medical and biology topics. With <b>high-quality human annotations of the slide text and spoken words</b>, in particular <b>high-valued name entities</b>, the dataset can be used for <b>multiple audio-visual recognition and understanding tasks</b>.
+          </p>
+          <p>
+            Evaluations performed on <b>contextual speech recognition, speech synthesis, and slide and script generation tasks</b> demonstrate that the diversity of 🎓M<sup>3</sup>AV makes it a challenging dataset.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mmmu">🎓M<sup>3</sup>AV Dataset</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            The overview of our 🎓M<sup>3</sup>AV dataset is shown below. 
+            <b>The first component</b> is slides annotated with simple and complex blocks. They will be merged following some rules. 
+            <b>The second component</b> is speech containing special vocabulary,
+            spoken and written forms, and word-level timestamps. 
+            <b>The third component</b> is the paper corresponding to the video.
+            The asterisk (*) denotes that only computer science videos have corresponding papers.
+          </p>
+          <img src="./static/images/overview.png" alt="" class="center100"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3">Statistics</h2>
+        <img src="static/images/stat.png" alt="context" class="center60"/>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-fifths">
+        <h2 class="title is-3">Comparsion with Related Work</h2>
+        <div class="content has-text-justified">
+          <p>
+            🎓M<sup>3</sup>AV dataset contains the most complete and human-annotated resources of slide, speech, and paper, thus supporting not only the <b>recognition</b> of multimodal content but also the <b>comprehension</b> of high-level academic knowledge. At the same time, the size of our dataset is also relatively <b>rich</b> while <b>accessible</b>.
+          </p>
+          <img src="static/images/compare1.png" alt="" class="center90"/>
+          <p class="has-text-centered">
+          <i>
+            Figure: Comparison with other academic lecture-based datasets in terms of data types and designed tasks. "A" denotes fully automated processing and "M" denotes fully or partially manual labelling. 
+          </i>
+          </p>
+          <img src="static/images/compare2.png" alt="context" class="center60"/>
+          <p class="has-text-centered">
+          <i>
+            Figure: Comparison with other academic lecture-based datasets in terms of data size and availability.
+          </i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mmmu">Benchmark Systems</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-fifths">
+        <h2 class="title is-3">ASR & Contextual ASR</h2>
+        <div class="content has-text-justified">
+          <p>
+            End-to-end models <b>suffer from rare word recognition</b> as reflected by the BWER where a more than two times increase in the error rate is observed comparing BWER to the WER. <br> By using TCPGen utilizing the OCR information (contextual ASR), we achieve <b>a relative BWER decrease of 37.8% and 34.2% on dev and test sets</b> respectively. 
+          </p>
+          <img src="./static/images/exp1.png" alt="" class="center80"/>
+          <p class="has-text-centered">
+          <i>
+            Table: Evaluation results on ASR and CASR tasks.
+          </i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="section">
+  <div class="container">
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-fifths">
+        <h2 class="title is-3">Spontaneous TTS</h2>
+        <div class="content has-text-justified">
+          <p>
+            The MQTTS model <b>shows the best performance</b> within all the evaluation metrics. It indicates that the real speech in our dataset can <b>drive AI systems to simulate more natural speech</b>.
+          </p>
+          <img src="./static/images/exp2.png" alt="" class="center50"/>
+          <p class="has-text-centered">
+          <i>
+            Table: Evaluation results on Spontaneous TTS task. “GT” denotes the ground truth.
+          </i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-fifths">
+        <h2 class="title is-3">Slide and Script Generation</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>(1) The open-source models (LLaMA-2, InstructBLIP) show a limited performance improvement when raised from 7B to 13B.</b> Their performances are far from the closed-source models (GPT-4 and GPT-4V). We believe that high-quality pre-training data, e.g., informative corpus and visual QA data which encapsulate multimodal information, is required to enhance their SSG performances beyond just boosting the model size.<br>
+            <b>(2) The latest LMM (GPT-4V) has already exceeded the cascaded pipeline composed of unimodal expert models.</b> It suggests that the LMM not only maintains the ability to process textual information but also possesses multi-sensory capabilities, such as the perception and recognition of the slides.
+          </p>
+          <img src="./static/images/exp3.png" alt="" class="center80"/>
+          <p class="has-text-centered"> 
+          <i>
+            Table: Evaluation results on SSG tasks. The upper part of “Slide→Script" shows cascading pipelines, while the lower part shows integrated systems.
+          </i>
+          </p>
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            <b><br>(3) RAG substantially enhances the generation</b>, as shown in the improvement after the introduction of paper information.
+          </p>
+          <img src="./static/images/exp4.png" alt="" class="center80"/>
+          <p>
+          <i>
+            Table: Performance improvements of LLaMA-2<sub>7B</sub> brought by retrieving paper information. “Subset” denotes that only Computer Science videos are contained in all sets for they are the only ones with downloadable papers.
+          </i>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mmmu">Conclusion</h1>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-half">
+        <div class="content has-text-justified">
+          <p>
+            <b>We release the Multimodal, Multigenre, and Multipurpose Audio-Visual Dataset with Academic Lectures (🎓M<sup>3</sup>AV) covering a range of academic fields.</b> This dataset contains manually annotated speech transcriptions, slide text, and additional extracted papers, providing a basis for evaluating AI models for <b>recognizing multimodal content and understanding academic knowledge</b>. We detail the creation pipeline and conduct various analyses of the dataset. Furthermore, we build benchmarks and conduct experiments around the dataset. <b>We find there is still large room for existing models to improve perceptions and understanding of academic lecture videos.</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- @PAN TODO: bibtex -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <pre><code>@article{chen2024m3av,
+      title={{M\textsuperscript{3}AV}: A Multimodal, Multigenre, and Multipurpose Audio-Visual Academic Lecture Dataset},
+      author={Chen, Zhe and Liu, Heyang and Yu, Wenyi and Sun, Guangzhi and Liu, Hongcheng and Wu, Ji and Zhang, Chao and Wang, Yu and Wang, Yanfeng},
+      journal={arXiv preprint arXiv:2403.14168},
+      year={2024}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <!-- <div class="container"> -->
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
+            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</footer>
+
+</body>
+</html>
